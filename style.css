@@ -1,3 +1,7 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -5,6 +9,8 @@ body {
   margin: 0;
   margin-top: 140px;
   background-color: #666;
+
+  color: #666;
 }
 
 header {
@@ -22,6 +28,8 @@ header {
   left: 0;
 
   background-color: #fff;
+
+  z-index: 100;
 }
 
 .material-icons.logo {
@@ -51,12 +59,20 @@ header {
 }
 
 .currency-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: relative;
+
   padding: 40px;
   background-color: #fff;
 
   text-align: center;
 
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
+
+  border-radius: 2px;
 }
 
 .sub-container {
@@ -81,4 +97,32 @@ header {
   font-size: 18px;
 
   border-bottom: 1px solid #666;
+}
+
+.currency-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.currency-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  position: absolute;
+  bottom: -25px;
+
+  width: 160px;
+  height: 50px;
+
+  font-size: 14px;
+  background-color: #fff;
+  color: #666;
+
+  border-radius: 25px;
+  border: 1px solid #666;
+}
+
+.material-icons.arrow {
+  font-size: 36px;
 }

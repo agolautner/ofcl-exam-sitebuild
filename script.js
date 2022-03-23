@@ -54,7 +54,7 @@ const loadEvent = () => {
             <h3 class="currency-title">${currency.title}</h3>
             <h3 class="currency-text">${currency.text}</h3>
 
-            <button>Save <span class="material-icons">
+            <button class="currency-button">Save <span class="material-icons arrow">
             arrow_forward
             </span></button>
         </article>
